@@ -1,0 +1,856 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 14px;
+    overflow-x: hidden;
+    line-height: 1.6;
+    font-family: Karla, sans-serif;
+    color: black;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+header #background-video {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    padding: 12px 30px 6px 30px !important;
+    background: #000000d4;
+    color: #fff;
+}
+
+nav p {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+nav i {
+    font-size: 1.5rem;
+}
+
+nav .social-icons {
+    display: none;
+}
+
+nav .logo {
+    filter: invert(100%) drop-shadow(5px 5px 5px #222222);
+    max-width: 200px;
+}
+
+@media screen and (min-width: 700px) {
+    nav .logo {
+        max-width: 260px;
+    }
+}
+@media screen and (min-width: 850px) {
+    nav .logo {
+        max-width: 300px;
+    }
+    nav .social-icons {
+        display: inherit;
+    }
+}
+
+main {
+    margin: -10px 0 0 0;
+}
+@media screen and (min-width: 576px) {
+    main {
+        margin: -50px 0 0 0;
+    }
+}
+@media screen and (min-width: 992px) {
+    main {
+        margin: -80px 0 0 0;
+    }
+}
+@media screen and (min-width: 1100px) {
+    main {
+        margin: -100px 0 0 0;
+    }
+}
+
+main > section {
+    padding: 60px 0;
+}
+
+h2.section-title {
+    font-family: Arimo, sans-serif;
+    font-style: normal;
+    font-size: 1.14286em;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    padding: 0 0 30px;
+}
+
+section h2.section-title div.border {
+    display: block;
+    height: 3px;
+    width: 15px;
+    margin: 15px auto 0;
+    background-color: #6a6a6a;
+}
+
+.standard-single {
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: 1.2;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 3.14286em;
+}
+.standard-single a {
+    color: #000;
+    text-decoration: none;
+}
+
+.standard-single a:hover {
+    color: #d30000;
+}
+
+.standard-index {
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0;
+    font-size: 1.71429em;
+    line-height: 1.2;
+    color: #000;
+    text-transform: uppercase;
+}
+
+#ProductPrice {
+    font-weight: 500;
+    color: #f70000 !important;
+    display: inline-block;
+}
+
+.feature-copy {
+    font-size: 1.28571em;
+    line-height: 1.6;
+}
+
+/* featured */
+
+#featured {
+    background-image: url(media/la.jpg);
+    background-size: cover;
+    background-position: 0 0;
+    padding: 32px 0 45px 0;
+    border-radius: 0.15rem;
+    box-shadow: 0 -4px 10px 2px rgba(0, 0, 0, 0.35);
+}
+#featured .row.dark-bg {
+    width: 90%;
+    margin: 0 auto;
+    background: #000000b0;
+    padding: 35px 0 80px 0;
+    border-radius: 0.35rem;
+}
+
+#featured img.featured-cap {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    border: solid 2px #d30000;
+    padding: 3px;
+    border-radius: 0.5rem;
+}
+
+#featured img.featured-cap:hover {
+    border: solid 2px red;
+}
+
+#featured .standard-single a,
+#featured .standard-index,
+#featured .feature-copy {
+    color: #fff;
+}
+
+#featured .standard-single,
+#featured #ProductPrice,
+#featured .standard-index {
+    text-align: center;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    #featured img.featured-cap {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 992px) {
+    #featured img.featured-cap {
+        width: 70%;
+    }
+    #featured .standard-single,
+    #featured #ProductPrice,
+    #featured .standard-index {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #featured img.featured-cap {
+        width: 60%;
+    }
+}
+
+#featured button {
+    background-color: #d30000;
+    width: 48%;
+    color: #fff;
+    padding: 9px 14px;
+    line-height: 1;
+    vertical-align: top;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    display: inline;
+    border: solid 2px #d31c00;
+    text-transform: uppercase;
+}
+#featured button.second {
+    background: none;
+    margin: 0 0 0 10px;
+}
+
+#featured button:hover {
+    background: red;
+    border: solid 2px red;
+}
+
+/* collections */
+
+#collections {
+    margin: 80px auto 0 auto;
+    padding: 0;
+}
+
+#collections .row > div .collection-section {
+    background-position: 0 0;
+    background-size: cover;
+    border-radius: 0.35rem;
+    position: relative;
+    padding: 60px 0 10px 0;
+}
+#collections .row > div .collection-1 {
+    background-image: url(media/collection1.jpg);
+    background-position-y: -60px;
+}
+#collections .row > div .collection-2 {
+    background-image: url(media/collection2.jpg);
+}
+#collections .row > div .collection-3 {
+    background-image: url(media/collection3.jpg);
+    background-position: 0 -180px;
+}
+#collections .row > div .collection-4 {
+    background-image: url(media/collection4.jpg);
+}
+
+#collections .row > div .collection-section h3 {
+    text-align: center;
+    padding: 0;
+    color: #fff;
+    font-size: 1.75rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+}
+#collections .row > div .collection-section p {
+    text-align: center;
+    padding: 0;
+    color: #fff;
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+}
+
+#collections .collections-section {
+    width: 94%;
+    margin: 160px auto 0 auto;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 35px 0 80px 0;
+    border-radius: 0.35rem;
+}
+
+#collections .collections-section .squares {
+    width: 70%;
+    display: block;
+    padding: 0;
+    position: relative;
+    margin: -200px auto 10px auto;
+}
+
+#collections .collections-section .squares img {
+    border-radius: 0.25rem;
+}
+
+.squares::before,
+.squares::after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.squares::before {
+    top: -8px;
+    left: -8px;
+    border-top: solid 4px #d30000;
+    border-left: solid 4px #d30000;
+}
+.squares::after {
+    bottom: 0;
+    right: -8px;
+    border-bottom: solid 4px #d30000;
+    border-right: solid 4px #d30000;
+}
+
+@media screen and (min-width: 992px) {
+    #collections .collections-section {
+        margin: 0 auto;
+    }
+    #collections .collections-section .squares {
+        width: 40%;
+        margin: -80px auto 10px auto;
+    }
+}
+
+#collections .collections-logo {
+    width: 80px;
+    display: block;
+    margin: -65px 20px 0 auto;
+    filter: invert(1) drop-shadow(2px 4px 6px black);
+}
+
+#collections button {
+    background-color: #d30000;
+    width: 52%;
+    color: #fff;
+    padding: 9px 14px;
+    line-height: 1;
+    vertical-align: top;
+    margin: 30px auto 0 auto;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    display: inline;
+    border: solid 2px #d31c00;
+    text-transform: uppercase;
+}
+
+#collections button:hover {
+    background: red;
+}
+
+/* about */
+#about {
+    background-size: cover !important;
+    background-position: center center;
+    padding: 200px 60px;
+    margin-top: 80px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url(media/bg-about.jpeg);
+}
+
+#about h3 {
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    border-bottom: 4px solid #d30000;
+}
+#about h4 {
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin: 16px 0 0 0;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.55);
+    color: #d30000;
+}
+
+#about a {
+    margin: 40px auto 0 auto;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 5px 28px;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+}
+#about a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* spotlight */
+
+#spotlight h2 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+#spotlight .border {
+    display: block;
+    height: 3px;
+    width: 15px;
+    margin: 15px auto 0;
+    background-color: #6a6a6a;
+}
+
+#spotlight .spot-section {
+    transition: all 300ms ease-in-out;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 0.25rem;
+}
+
+#spotlight .spot-section:hover {
+    transform: translateY(-8px);
+}
+
+#spotlight .img-spot {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background-size: cover;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#spotlight .img-spot::before,
+#spotlight .img-spot::after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+#spotlight .img-spot::before {
+    top: -8px;
+    left: -8px;
+    border-top: solid 4px #d30000;
+    border-left: solid 4px #d30000;
+}
+#spotlight .img-spot::after {
+    bottom: -8px;
+    right: -8px;
+    border-bottom: solid 4px #d30000;
+    border-right: solid 4px #d30000;
+}
+
+#spotlight .img-spot.img-1 {
+    background-image: url(media/spot-1.webp);
+}
+#spotlight .img-spot.img-2 {
+    background-image: url(media/spot-2.webp);
+}
+#spotlight .img-spot.img-3 {
+    background-image: url(media/spot-3.webp);
+}
+
+#spotlight .spot-section .title {
+    font-size: 1.8rem;
+    line-height: 1.25;
+}
+#spotlight .spot-section .date {
+    font-size: 1rem;
+    color: #727272;
+    margin: 3px 0 15px 0;
+    display: block;
+}
+#spotlight .spot-section p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+}
+
+#spotlight .spot-section a {
+    color: #d30000;
+    text-decoration: none;
+}
+#spotlight .spot-section a:hover {
+    color: #000;
+}
+
+/* newsletter */
+#newsletter {
+    background-size: cover;
+    background-position: center center;
+    padding: 130px 60px;
+    margin-top: 50px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url(media/caps.jpg);
+}
+
+#newsletter h3 {
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    border-bottom: 4px solid #d30000;
+}
+#newsletter h4 {
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin: 16px 0 0 0;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.55);
+    color: #d30000;
+}
+
+#newsletter .input-group {
+    width: fit-content;
+    margin: 50px auto 0 auto;
+}
+
+#newsletter .input-group input {
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: 0.25rem;
+    padding: 7px 25px;
+    width: 100%;
+    border: solid 2px #d30000;
+}
+
+#newsletter .input-group button {
+    background-color: #d30000;
+    border: none;
+    color: #fff;
+    padding: 11px 20px;
+    line-height: 1;
+    vertical-align: top;
+    margin: 12px 0 0 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+#newsletter .input-group button:hover {
+    background-color: red;
+}
+
+@media screen and (min-width: 880px) {
+    #newsletter .input-group input {
+        width: 64%;
+    }
+
+    #newsletter .input-group button {
+        width: 33%;
+        margin: 0 0 0 1%;
+    }
+}
+
+/* insta */
+#insta {
+    padding: 80px 0;
+}
+
+@media screen and (min-width: 992px) {
+    #insta {
+        padding: 180px 0 60px 0;
+    }
+}
+
+#insta .post {
+    background-color: #f5f5f5;
+    border-radius: 0.5rem;
+    background-size: cover;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#insta .insta-1 {
+    background-image: url(media/insta-1.jpg);
+}
+#insta .insta-2 {
+    background-image: url(media/insta-2.jpg);
+}
+#insta .insta-3 {
+    background-image: url(media/insta-3.jpg);
+}
+#insta .insta-4 {
+    background-image: url(media/insta-4.jpg);
+}
+#insta .insta-5 {
+    background-image: url(media/insta-5.jpg);
+}
+#insta .insta-6 {
+    background-image: url(media/insta-6.jpg);
+}
+
+#insta .post > div {
+    background-color: hsla(0, 0%, 0%, 0.75);
+    width: 100%;
+    min-height: 180px;
+    transform: translateY(5%);
+    opacity: 0;
+    transition: all 200ms ease-in;
+}
+
+#insta .post:hover > div {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#insta .post i {
+    font-size: 1.2rem;
+    color: #dfdfdf;
+}
+
+#insta .post .num {
+    font-size: 1.1rem;
+    color: #dfdfdf;
+    margin-left: 4px;
+}
+
+#insta .post .title {
+    font-size: 1rem;
+    color: #dfdfdf;
+    line-height: 1.25;
+    margin: 10px 0;
+    display: block;
+}
+#insta .post .tags {
+    font-size: 0.9rem;
+    color: #dfdfdf;
+    margin-left: 5px;
+    line-height: 1;
+}
+
+/* events */
+
+#events h2 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+#events .border {
+    display: block;
+    height: 3px;
+    width: 15px;
+    margin: 15px auto 0;
+    background-color: #6a6a6a;
+}
+
+#events .bor {
+    border-bottom: solid 1px #d9d9d9;
+    padding-bottom: 15px;
+}
+#events .day {
+    font-size: 1.8rem;
+    text-align: center;
+    display: block;
+    line-height: 1;
+    font-weight: 800;
+}
+#events .month {
+    font-size: 1.4rem;
+    text-align: center;
+    display: block;
+    font-weight: 800;
+}
+#events h4 {
+    font-size: 1.4rem;
+    color: #000;
+}
+#events h5 {
+    font-size: 1.2rem;
+    color: #d30000;
+}
+#events .info {
+    color: #d30000;
+    text-align: right;
+    font-size: 1.1rem;
+    display: block;
+}
+
+/* footer */
+footer {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    padding: 45px 0 30px 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-position-y: 33%;
+    background-image: url(media/bg-la.jpg);
+}
+footer::before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.8));
+}
+
+footer .row {
+    position: relative;
+}
+
+footer h5 {
+    font-size: 1.3rem;
+    text-align: left;
+    color: #d30000;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+
+footer ul li {
+    display: block;
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 0 30px;
+    cursor: pointer;
+}
+footer ul li:hover {
+    color: #d30000;
+}
+
+footer .input-group input {
+    outline: none;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    padding: 10px 20px;
+    border: solid 2px #d30000;
+    width: 100%;
+}
+
+footer .input-group button {
+    background-color: #d30000;
+    width: 100%;
+    border: none;
+    color: #fff;
+    padding: 9px 14px;
+    line-height: 1;
+    vertical-align: top;
+    margin: 12px 0 0 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+footer .input-group button:hover {
+    background-color: red;
+}
+
+@media screen and (min-width: 768px) {
+    footer h5 {
+        text-align: left;
+    }
+    footer ul li {
+        display: inline-block;
+        margin: 0 20px 0 0;
+    }
+    footer ul li i {
+        vertical-align: top;
+    }
+    footer .input-group input {
+        width: 64%;
+        padding: 5px 20px;
+    }
+
+    footer .input-group button {
+        width: 33%;
+        margin: 0 0 0 1%;
+    }
+}
+
+footer ul.social {
+    width: fit-content;
+    margin: 0 auto;
+}
+footer ul.social li {
+    font-size: 2.2rem;
+    display: inline-block;
+}
+footer ul.cards-list {
+    width: fit-content;
+    margin: 65px auto 0 auto;
+}
+
+footer ul.cards-list li {
+    margin: 0 4px 0 0;
+    display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+    footer ul.social {
+        margin: 0;
+    }
+}
+@media screen and (min-width: 992px) {
+    footer ul li {
+        font-size: 1.1rem;
+    }
+    footer ul.social li {
+        font-size: 1.6rem;
+    }
+}
+
+footer h6 {
+    font-size: 1.15rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
