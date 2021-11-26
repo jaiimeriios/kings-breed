@@ -44,7 +44,7 @@ header #background-video {
 nav {
     position: absolute;
     top: 0;
-    padding: 12px 30px 6px 30px !important;
+    padding: 12px 30px 9px 30px !important;
     background: #000000d4;
     color: #fff;
 }
@@ -52,10 +52,11 @@ nav {
 nav p {
     font-size: 1.5rem;
     line-height: 1;
+    display: none;
 }
 
 nav i {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 nav .social-icons {
@@ -64,25 +65,51 @@ nav .social-icons {
 
 nav .logo {
     filter: invert(100%) drop-shadow(5px 5px 5px #222222);
-    max-width: 200px;
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
 }
 
+@media screen and (min-width: 306px) {
+    nav .logo {
+        max-width: 60%;
+    }
+}
+/* @media screen and (min-width: 306px) {
+    nav .logo {
+        max-width: 110px;
+    }
+}
+
+@media screen and (min-width: 466px) {
+    nav .logo {
+        max-width: 190px;
+    }
+} */
+@media screen and (min-width: 580px) {
+    nav p {
+        display: block;
+    }
+    nav i {
+        font-size: 1.5rem;
+    }
+}
 @media screen and (min-width: 700px) {
     nav .logo {
         max-width: 260px;
+    }
+    nav .social-icons {
+        display: inherit;
     }
 }
 @media screen and (min-width: 850px) {
     nav .logo {
         max-width: 300px;
     }
-    nav .social-icons {
-        display: inherit;
-    }
 }
 
 main {
-    margin: -10px 0 0 0;
+    margin: -8px 0 0 0;
 }
 @media screen and (min-width: 576px) {
     main {
@@ -231,7 +258,7 @@ section h2.section-title div.border {
 
 #featured button {
     background-color: #d30000;
-    width: 48%;
+    width: 100%;
     color: #fff;
     padding: 9px 14px;
     line-height: 1;
@@ -247,7 +274,7 @@ section h2.section-title div.border {
 }
 #featured button.second {
     background: none;
-    margin: 0 0 0 10px;
+    margin: 10px 0 0 0;
 }
 
 #featured button:hover {
@@ -255,11 +282,33 @@ section h2.section-title div.border {
     border: solid 2px red;
 }
 
+@media screen and (min-width: 480px) {
+    #featured button {
+        width: 48%;
+    }
+    #featured button.second {
+        margin: 0 0 0 10px;
+    }
+}
+
 /* collections */
 
 #collections {
     margin: 80px auto 0 auto;
     padding: 0;
+}
+
+#collections h2 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+#collections .border {
+    display: block;
+    height: 3px;
+    width: 15px;
+    margin: 15px auto 0;
+    background-color: #6a6a6a;
 }
 
 #collections .row > div .collection-section {
@@ -358,7 +407,7 @@ section h2.section-title div.border {
 
 #collections button {
     background-color: #d30000;
-    width: 52%;
+    width: 80%;
     color: #fff;
     padding: 9px 14px;
     line-height: 1;
@@ -375,6 +424,12 @@ section h2.section-title div.border {
 
 #collections button:hover {
     background: red;
+}
+
+@media screen and (min-width: 768px) {
+    #collections button {
+        width: 50%;
+    }
 }
 
 /* about */
@@ -519,7 +574,7 @@ section h2.section-title div.border {
 #newsletter {
     background-size: cover;
     background-position: center center;
-    padding: 130px 60px;
+    padding: 130px 20px;
     margin-top: 50px;
     overflow: hidden;
     width: 100%;
@@ -537,7 +592,11 @@ section h2.section-title div.border {
     text-align: center;
     color: #fff;
     border-bottom: 4px solid #d30000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    line-height: 1;
+    padding-bottom: 20px;
 }
+
 #newsletter h4 {
     font-weight: 600;
     font-style: normal;
@@ -636,10 +695,16 @@ section h2.section-title div.border {
 #insta .post > div {
     background-color: hsla(0, 0%, 0%, 0.75);
     width: 100%;
-    min-height: 180px;
+    min-height: 300px;
     transform: translateY(5%);
     opacity: 0;
     transition: all 200ms ease-in;
+}
+
+@media screen and (min-width: 578px) {
+    #insta .post > div {
+        min-height: 180px;
+    }
 }
 
 #insta .post:hover > div {
